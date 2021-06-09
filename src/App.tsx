@@ -7,7 +7,7 @@ function App() {
     // dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
     dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
     dataLayer.push({
-      'event': 'productClick',
+      'event': 'product_click',
       'ecommerce': {
         'items': [{
           'item_name': 'productObj name', // Name or ID is required.
