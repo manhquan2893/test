@@ -7,21 +7,22 @@ function App() {
     // dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
     dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
     dataLayer.push({
-      'event': 'product_click',
       'ecommerce': {
-        'items': [{
-          'item_name': 'productObj name', // Name or ID is required.
-          'item_id': 23423,
-          'item_brand': 'productObj brand',
-          'item_category': 'productObj category',
-          'item_category2': 'productObj category_2',
-          'quantity': 12,
-          'price': 25
-        }]
+        'detail': {
+          'actionField': {'list': 'Apparel Gallery'},    // 'detail' actions have an optional list property.
+          'products': [{
+            'name': 'Triblend Android T-Shirt',         // Name or ID is required.
+            'id': '12345',
+            'price': '15.25',
+            'brand': 'Google',
+            'category': 'Apparel',
+            'variant': 'Gray'
+          }]
+        }
       }
     });
     }, [])
-    
+
   return (
     <div className="App" >
      my name is Quan
