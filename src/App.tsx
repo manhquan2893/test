@@ -4,7 +4,7 @@ function App() {
   useEffect(() => {
     //@ts-ignore
     const dataLayer = window.dataLayer
-    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+    // dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
     dataLayer.push({
       'event': 'productClick',
       'ecommerce': {
