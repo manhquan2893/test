@@ -5,7 +5,6 @@ function App() {
     const dataLayer = window.dataLayer
     dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
-  'event':'gtm.dom',
   'ecommerce': {
     'detail': {
       'actionField': {'list': 'Apparel Gallery'},    // 'detail' actions have an optional list property.
