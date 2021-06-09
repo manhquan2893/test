@@ -5,21 +5,19 @@ function App() {
     //@ts-ignore
     const dataLayer = window.dataLayer
     // dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
     dataLayer.push({
-      'event': 'productClick',
+      'event': 'select_item',
       'ecommerce': {
-        'click': {
-          'actionField': {'list': 'Search Results'},      // Optional list property.
-          'products': [{
-            'name': 'product name',                      // Name or ID is required.
-            'id': 12345,
-            'price': 25,
-            'brand': 'product brand',
-            'category': 'product category',
-            'variant': 'variant',
-            'position': 'position'
-          }]
-        }
+        'items': [{
+          'item_name': 'productObj name', // Name or ID is required.
+          'item_id': 23423,
+          'item_brand': 'productObj brand',
+          'item_category': 'productObj category',
+          'item_category2': 'productObj category_2',
+          'quantity': 12,
+          'price': 25
+        }]
       }
     });
     }, [])
